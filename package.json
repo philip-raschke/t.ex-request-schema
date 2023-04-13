@@ -1,0 +1,28 @@
+{
+  "name": "t.ex-request-schema",
+  "version": "1.0.0",
+  "description": "A tool to generate the JSON schema of the T.EX request format which relies on the WebExtensions interface of the different browsers.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json-schema",
+    "web-extensions",
+    "standard",
+    "t.ex",
+    "request",
+    "format"
+  ],
+  "author": "Philip Raschke",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^9.2.0",
+    "generate-schema": "^2.4.0"
+  },
+  "devDependencies": {
+    "clean-jsdoc-theme": "^4.2.2",
+    "jsdoc": "^4.0.2"
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Request Set",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "documentId": {
+        "type": "string"
+      },
+      "documentLifecycle": {
+        "type": "string"
+      },
+      "frameId": {
+        "type": "number"
+      },
+      "frameType": {
+        "type": "string"
+      },
+      "initiator": {
+        "type": "string"
+      },
+      "method": {
+        "type": "string"
+      },
+      "parentFrameId": {
+        "type": "number"
+      },
+      "requestId": {
+        "type": "string"
+      },
+      "tabId": {
+        "type": "number"
+      },
+      "timeStamp": {
+        "type": "number"
+      },
+      "type": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string"
+      },
+      "requestHeaders": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ]
+        }
+      },
+      "response": {
+        "type": "object",
+        "properties": {
+          "documentId": {
+            "type": "string"
+          },
+          "documentLifecycle": {
+            "type": "string"
+          },
+          "frameId": {
+            "type": "number"
+          },
+          "frameType": {
+            "type": "string"
+          },
+          "fromCache": {
+            "type": "boolean"
+          },
+          "initiator": {
+            "type": "string"
+          },
+          "ip": {
+            "type": "string"
+          },
+          "method": {
+            "type": "string"
+          },
+          "parentFrameId": {
+            "type": "number"
+          },
+          "requestId": {
+            "type": "string"
+          },
+          "responseHeaders": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "value"
+              ]
+            }
+          },
+          "statusCode": {
+            "type": "number"
+          },
+          "statusLine": {
+            "type": "string"
+          },
+          "tabId": {
+            "type": "number"
+          },
+          "timeStamp": {
+            "type": "number"
+          },
+          "type": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "parentDocumentId": {
+            "type": "string"
+          }
+        }
+      },
+      "success": {
+        "type": "boolean"
+      },
+      "labels": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "isLabeled": {
+              "type": "boolean"
+            },
+            "blocklist": {
+              "type": "string"
+            },
+            "rule": {
+              "type": "array",
+              "items": {
+                "type": "array"
+              }
+            }
+          },
+          "required": [
+            "isLabeled",
+            "blocklist",
+            "rule"
+          ]
+        }
+      },
+      "parentDocumentId": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "documentId",
+      "documentLifecycle",
+      "frameId",
+      "frameType",
+      "initiator",
+      "method",
+      "parentFrameId",
+      "requestId",
+      "tabId",
+      "timeStamp",
+      "type",
+      "url",
+      "requestHeaders",
+      "response",
+      "success",
+      "labels",
+      "parentDocumentId"
+    ],
+    "title": "Request"
+  }
+}
