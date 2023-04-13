@@ -1,6 +1,6 @@
 # Installation
 
-To use ___, you need to install Node.js (ideally v16+) and npm (ideally v8+). Use the following command to install the dependencies.
+To use t.ex-request-schema, you need to install Node.js (ideally v16+) and npm (ideally v8+). Use the following command to install the dependencies.
 
 ```npm install```
 
